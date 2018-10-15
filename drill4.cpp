@@ -8,7 +8,7 @@ int main()
 		cout<< "To exit type in (|)\n";
 		cin>>sign;
 		 if (sign=="|")
-			 {return 0;}
+			 break;
 		cout<<"Enter a number, then enter a mesurment(cm,m,in,ft)\n";
 		double a;
 		cin>>a>>sign;

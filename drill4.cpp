@@ -15,25 +15,34 @@ int main()
 		
 			if (sign=="cm"){
 				a = a/100;
-				number.push_back(a);}
+				}
 			else if (sign=="m"){
-				number.push_back(a);}
+				a=a;}
 			else if (sign=="in"){
 				a = a/39.39;
-				number.push_back(a);}
+				;}
 			else if (sign=="ft"){
 				a = a/3.28;
-				number.push_back(a);}
+				;}
 			else {
 				cout<< "Wrong mesurment.\n";
 				return 0; }
 	
-
+		
+		number.push_back(a);
 
 		cout<<"The value entered "<<a<<" m\n"; //éppen bevitt érték
 			if (a<number[0]){
 				cout<<a<<"m the smallest so far\n";}
+
+			for (int v=0;v<number.size();v++){
+				int w=v-1;
+				if(w>=0){
+					if(a>number[w]){
+				cout<<a<<"m the largest so far\n";}
+		;};}
 		
+	
 		sort(number);		
 
 	

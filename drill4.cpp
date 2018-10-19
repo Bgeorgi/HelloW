@@ -8,7 +8,7 @@ int main()
 		cout<< "To exit type in (|)\n";
 		cin>>sign;
 		 if (sign=="|")
-			 break;
+			 {break;}
 		cout<<"Enter a number, then enter a mesurment(cm,m,in,ft)\n";
 		double a;
 		cin>>a>>sign;
@@ -30,9 +30,9 @@ int main()
 	
 
 
-		cout<<"The value entered "<<a<<" \n"; //éppen bevitt érték
+		cout<<"The value entered "<<a<<" m\n"; //éppen bevitt érték
 			if (a<number[0]){
-				cout<<a<<" the smallest so far\n";}
+				cout<<a<<"m the smallest so far\n";}
 		
 		sort(number);		
 
@@ -40,13 +40,14 @@ int main()
 		cout<<"The smaller value is: "<<number[0]<<"m\n";
 		cout<<"The larger value is: "<<number.back()<<"m\n";
 		
+		
+}	
 		int sum = 0;
 		 for (int i = 0; i < number.size(); i++) 
 			sum += number[i];
-			cout<<sum<<"sum\n";		
+			cout<<sum<<"m sum\n";		
 		for (int i=0;i<number.size();i++){
-			cout<<number[i]<<"\t";}
+			cout<<number[i]<<"m\t";}
 			cout<<"\n";	
-}	
 
 }
